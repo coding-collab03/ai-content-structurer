@@ -26,7 +26,7 @@ This project does not use external AI APIs. Instead, it focuses on demonstrating
 
 ## Purpose
 
-This project was built as a learning exercise to understand how content processing tools work and how AI-like behavior can be simulated using rule-based logic. It demonstrates basic front-end development skills and text processing techniques.
+This project was built as a learning exercise to understand how content processing tools work and how AI-like behavior can be simulated using rule-based logic.
 
 ## Live demo
 
@@ -38,13 +38,5 @@ https://ai-content-structurer.vercel.app/
 2. Run `npm install`
 3. Run `npm run dev` or `npm start`
 4. Open the local server in your browser
-
-## Future improvements
-
-Possible upgrades for this project include:
-- Integrating a real AI API for smarter summarization
-- Adding export options (PDF or text download)
-- Improving UI with a more modern interface
-- Adding multiple content modes (summary, rewrite, expand)
 
 ---
