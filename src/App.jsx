@@ -40,27 +40,105 @@ ${input}
   };
 
   return (
-    <div style={{ padding: 20 }}>
-      <h2>AI Content Structuring Tool</h2>
+  <div
+    style={{
+      minHeight: "100vh",
+      backgroundColor: "#f4f7fb",
+      padding: "40px 20px",
+      fontFamily: "Arial, sans-serif",
+    }}
+  >
+    <div
+      style={{
+        maxWidth: "850px",
+        margin: "0 auto",
+        backgroundColor: "white",
+        padding: "30px",
+        borderRadius: "12px",
+        boxShadow: "0 4px 15px rgba(0,0,0,0.08)",
+      }}
+    >
+      <h1
+        style={{
+          marginBottom: "10px",
+          color: "#222",
+        }}
+      >
+        AI Content Structuring Tool
+      </h1>
 
-      <button onClick={structureContent} style={{ marginTop: 10, padding: 10 }}>
-        Structure Content (AI)
-      </button>
+      <p
+        style={{
+          color: "#555",
+          marginBottom: "20px",
+          lineHeight: "1.6",
+        }}
+      >
+        Paste unstructured content below to automatically generate a summary,
+        key points, and a cleaner structured format.
+      </p>
 
       <textarea
         rows={10}
-        style={{ width: "100%", padding: 10, marginTop: 10 }}
-        placeholder="Paste raw article, blog, or document here..."
+        value={input}
         onChange={(e) => setInput(e.target.value)}
+        placeholder="Paste raw article, blog, or document here..."
+        style={{
+          width: "100%",
+          padding: "15px",
+          borderRadius: "8px",
+          border: "1px solid #ccc",
+          resize: "vertical",
+          fontSize: "15px",
+          lineHeight: "1.5",
+          boxSizing: "border-box",
+        }}
       />
 
-      <h3 style={{ marginTop: 20 }}>Structured Output</h3>
+      <button
+        onClick={structureContent}
+        style={{
+          marginTop: "15px",
+          padding: "12px 18px",
+          border: "none",
+          borderRadius: "8px",
+          backgroundColor: "#2563eb",
+          color: "white",
+          fontSize: "15px",
+          cursor: "pointer",
+          fontWeight: "bold",
+        }}
+      >
+        Structure Content
+      </button>
 
       {output && (
-        <pre style={{ marginTop: 20, whiteSpace: "pre-wrap" }}>
-          {output}
-        </pre>
+        <div
+          style={{
+            marginTop: "30px",
+            backgroundColor: "#f9fafb",
+            padding: "20px",
+            borderRadius: "10px",
+            border: "1px solid #e5e7eb",
+          }}
+        >
+          <h2 style={{ marginBottom: "15px", color: "#222" }}>
+            Structured Output
+          </h2>
+
+          <pre
+            style={{
+              whiteSpace: "pre-wrap",
+              lineHeight: "1.7",
+              fontSize: "14px",
+              color: "#333",
+            }}
+          >
+            {output}
+          </pre>
+        </div>
       )}
     </div>
-  );
+  </div>
+);
 }
