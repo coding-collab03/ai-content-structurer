@@ -1,16 +1,50 @@
-# React + Vite
+# AI Content Structuring Tool
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple AI-assisted content structuring tool built with React. It takes unstructured text and transforms it into a more organized format with a summary, key points, and full content display.
 
-Currently, two official plugins are available:
+## What it does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The tool allows users to paste raw text and then generates a structured version of it. It includes:
 
-## React Compiler
+- A short summary generated from the first sentences
+- Key points extracted from the text
+- The original content displayed for reference
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The goal is to simulate how AI tools help restructure and simplify information for better readability and organization.
 
-## Expanding the ESLint configuration
+## How it works
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The application uses basic text processing logic to split and clean input text. It then formats the content into structured sections. The key points are generated using simple sentence extraction and formatting rules to mimic AI-style output.
+
+This project does not use external AI APIs. Instead, it focuses on demonstrating how content structuring logic can be implemented using JavaScript.
+
+## Technologies used
+
+- React
+- JavaScript
+- HTML/CSS (inline styling)
+
+## Purpose
+
+This project was built as a learning exercise to understand how content processing tools work and how AI-like behavior can be simulated using rule-based logic. It demonstrates basic front-end development skills and text processing techniques.
+
+## Live demo
+
+[https://ai-content-structurer.vercel.app/]
+
+## How to run locally
+
+1. Clone the repository
+2. Run `npm install`
+3. Run `npm run dev` or `npm start`
+4. Open the local server in your browser
+
+## Future improvements
+
+Possible upgrades for this project include:
+- Integrating a real AI API for smarter summarization
+- Adding export options (PDF or text download)
+- Improving UI with a more modern interface
+- Adding multiple content modes (summary, rewrite, expand)
+
+---
