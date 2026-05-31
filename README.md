@@ -30,7 +30,7 @@ This project was built as a learning exercise to understand how content processi
 
 ## Live demo
 
-[https://ai-content-structurer.vercel.app/]
+https://ai-content-structurer.vercel.app/
 
 ## How to run locally
 
