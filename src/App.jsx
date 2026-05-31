@@ -58,14 +58,9 @@ ${input}
         boxShadow: "0 4px 15px rgba(0,0,0,0.08)",
       }}
     >
-      <h1
-        style={{
-          marginBottom: "10px",
-          color: "#222",
-        }}
-      >
-        AI Content Structuring Tool
-      </h1>
+      <h2 style={{ marginBottom: "20px" }}>
+  AI Content Structuring Tool
+</h2>
 
       <p
         style={{
